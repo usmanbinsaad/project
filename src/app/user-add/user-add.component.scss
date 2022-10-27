@@ -1,0 +1,198 @@
+@import "../../styles.scss";
+@import "../../varable.scss";
+.bg-white {
+  background-color: var(--common-bgClr) !important;
+}
+
+.align-items-center {
+  align-items: center !important;
+}
+
+.sectionHead {
+  font-family: var(--family_font);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 42px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #2c4a6c;
+}
+
+.loginForm {
+  .login_box {
+    width: 100%;
+
+    padding: 0vw 11vw;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    .login_title {
+      margin: 7vh 0 0.5vh;
+      // font-size: 32px;
+      // font-weight: 500;
+    }
+
+    sup {
+      color: #ee4166;
+      font-size: 18px;
+      position: relative;
+      font-style: italic;
+      top: -1px;
+    }
+
+    .sectionDescription {
+      font-family: var(--family_font);
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+      /* identical to box height */
+
+      text-align: center;
+
+      color: var(--discription);
+      // font-weight: normal !important;
+      // line-height: 1.5 !important;
+    }
+
+    input.checkbox {
+      width: 18px;
+      height: 18px;
+      border: solid 1px #c7ccd8;
+      margin-right: 8px;
+    }
+    .reg_link {
+      font-family: var(--family_font);
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 19px;
+      text-decoration: none !important;
+
+      color: var(--discription);
+    }
+    .forgot_link {
+      float: right;
+      margin-top: 3px;
+    }
+    .login_container .login_box .btn-primary {
+      width: 100%;
+      margin: 1vh 0;
+    }
+    .reg_text {
+      text-align: center;
+      margin: 4vh;
+      font-size: 16px;
+      // color: var(--login_text_color);
+      font-family: var(--family_font);
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+      /* identical to box height */
+
+      color: var(--discription);
+    }
+  }
+  .form-group {
+    margin: 1vh 0 1vh;
+
+    position: relative;
+    margin-bottom: 20px !important;
+
+    .form-control {
+      background-color: var(--common-bgClr) !important;
+      // border: 0.3px solid #404041;
+      // border-radius: 5px;
+    }
+    label.sectionLabel {
+      font-family: var(--family_font);
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 22px;
+      /* identical to box height */
+
+      text-align: center;
+
+      color: var(--btn_primary_bg);
+    }
+    label {
+      font-weight: 500;
+      font-size: 15px;
+      margin-bottom: 0.5rem;
+    }
+  }
+}
+.error_msg.text-danger {
+  position: absolute;
+  bottom: -20px;
+  transition: all ease 2s;
+  font-size: 12px;
+}
+.text-danger {
+  color: var(--danger) !important;
+}
+.custom_checkbox {
+  display: inline;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height */
+
+  color: var(--btn_primary_bg);
+
+  input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  .checkmark {
+    width: 18px;
+    height: 18px;
+    border: solid 1px #c7ccd8;
+    position: absolute;
+    top: 3px;
+    margin-right: 8px;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0) !important;
+    left: 0;
+  }
+}
+
+.btn-block.btn.btn-primary {
+  width: 100%;
+}
+.btn:disabled {
+  // background-color: var(--body-bg-color) !important;
+
+  // color: #404041 !important;
+  opacity: 1;
+  cursor: no-drop !important;
+  pointer-events: visible;
+
+  color: rgba(0, 0, 0, 0.692) !important;
+  border-color: var(--list-border) !important;
+  background: var(--diablebackground) !important;
+  text-shadow: none;
+  box-shadow: none;
+}
+// .text-center {
+//     text-align: center!important;
+// }

@@ -1,0 +1,25 @@
+@import "../../styles.scss";
+@import "../../varable.scss";
+.container {
+  .tableposition {
+    margin: 20px 0px 20px 0px;
+  }
+  .selectData {
+    position: "absolute";
+    .form-select {
+      position: relative;
+      // max-width: 20%;
+      padding: 8px 15px;
+      border-radius: 6px;
+      border: solid 1px #c7ccd8;
+      font-size: 13px;
+      left: 956px;
+      top: 0px;
+      z-index: 5000;
+    }
+    
+  }
+}
+.dropdown-toggle::after {
+  opacity: 0;
+}

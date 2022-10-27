@@ -1,0 +1,50 @@
+<div class="container" style="max-width: 85%">
+  <div class="tableposition"></div>
+  <div ngbDropdown class="d-inline-block selectData" style="position: absolute">
+    <button
+      class=".btn-primary form-select"
+      style="float: right; margin: 0 20px 0 24px ; width: 159px;"
+      id="dropdownBasic1"
+      ngbDropdownToggle
+    >
+      {{ itemdata }}
+    </button>
+    <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+      <button class="dropdown-item " style="font-size: 14px;" (click)="Alldata()">All</button>
+
+      <button
+        class="dropdown-item"style="font-size: 14px;"
+        *ngFor="let data of userdata"
+        (click)="checkData(data.name)"
+      >
+        {{ data.name }}
+      </button>
+    </div>
+  </div>
+  
+  <table datatable [dtOptions]="dtOptions" class="row-border hover">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Age</th>
+        <th>Contect No</th>
+      </tr>
+    </thead>
+    <tbody *ngIf="tabledata?.length != 0">
+      <tr *ngFor="let person of tabledata; let item = index">
+        <td>{{ item + 1 }}</td>
+        <td>{{ person.name }}</td>
+        <td>{{ person.email }}</td>
+        <td>{{ person.age }}</td>
+        <td>{{ person.cell }}</td>
+      </tr>
+    </tbody>
+    <tbody *ngIf="persons?.length == 0">
+      <tr>
+        <td colspan="3" class="no-data-available">No data!</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

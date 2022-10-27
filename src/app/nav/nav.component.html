@@ -1,0 +1,46 @@
+<nav ngxNavbarDynamicExpand class="navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"
+      ><img
+        style="display: flex"
+        src="https://gomobit.com/wp-content/uploads/2022/06/logo-gomobit-final.png"
+        width="100px"
+        alt=""
+    /></a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      (click)="collapse.toggle()"
+      aria-controls="main-nav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span
+        class="navbar-toggler-icon d-flex align-items-center justify-content-center"
+      >
+      </span>
+    </button>
+    <ngx-navbar-collapse
+      id="main-nav"
+      #collapse="ngxNavbarCollapse"
+      (click)="onButtonGroupClick($event)"
+    >
+      <ul class="navbar-nav switch-group">
+        <div class="switch-group">
+          <button class="radio_btn active" (click)="adduser()">
+            Add Users
+          </button>
+
+          <button class="radio_btn" (click)="viewUser()">View Users</button>
+        </div>
+      </ul>
+    </ngx-navbar-collapse>
+  </div>
+</nav>
+
+<ng-container *ngIf="addsec">
+  <app-user-add></app-user-add>
+</ng-container>
+<ng-container *ngIf="viewsec">
+  <app-user-view></app-user-view>
+</ng-container>

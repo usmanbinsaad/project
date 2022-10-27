@@ -1,0 +1,128 @@
+@import "bootstrap/scss/bootstrap";
+@import url("https://fonts.googleapis.com/css?family=Barlow");
+@import "varable.scss";
+
+/* Importing Bootstrap SCSS file. */
+.container {
+  width: 100% !important;
+  // @media (min-width: 1200px)
+  //  {
+  //     width: 1140px;
+  //     max-width: 100%;
+  // }
+  // @media (min-width: 992px)
+  //  {
+  //     width: 960px;
+  //     max-width: 100%;
+  // }
+  .p-0 {
+    padding: 0 !important;
+  }
+}
+
+.bg-main {
+  background-color: var(--background-color) !important;
+}
+.main-bg {
+  background-color: var(--common-bgClr) !important;
+}
+.p-0 {
+  padding: 0 !important;
+}
+
+.btn-primary,
+.btn-primary:hover {
+  background-color: var(--btn_primary_bg) !important;
+  border-color: var(--btn_primary_border_color);
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 600;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+
+.h100 {
+  height: 100vh !important;
+}
+.h80 {
+  height: 80vh !important;
+}
+.ngx-toastr {
+  // background-color: #030303;
+  pointer-events: auto;
+}
+.toast-success {
+  background-color: var(--bgTostr);
+  border-color: var(--tostrBoder);
+
+  border: 1px solid var(--tostrBoder);
+
+  background-image: url("assets/images/success.svg");
+
+  .toast-title {
+    color: #51a351;
+  }
+
+  .toast-message {
+    color: #51a351;
+  }
+}
+.toast-error {
+  background-color: var(--bgTostr);
+  border-color: var(--tostrBoder);
+  border: 1px solid var(--tostrBoder);
+
+  background-image: url("assets/images/danger.svg");
+
+  .toast-title {
+    color: var(--tostrRed);
+  }
+
+  .toast-message {
+    color: var(--tostrRed);
+  }
+}
+.toast-warning {
+  background-color: var(--bgTostr);
+  border-color: var(--tostrBoder);
+
+  border: 1px solid var(--tostrBoder);
+  background-image: url("assets/images/warning.svg");
+
+  .toast-title {
+    color: var(--tostrWarn);
+  }
+  .toast-message {
+    color: var(--tostrWarn);
+  }
+}
+
+.toast-container {
+  // width: 100%;
+  .ngx-toastr {
+    position: relative;
+    overflow: hidden;
+    margin: 0 0 6px;
+    padding: 15px 15px 15px 50px;
+    width: 300px;
+    border-radius: 3px 3px 3px 3px;
+
+    background-position: 15px center;
+    background-repeat: no-repeat;
+    background-size: 24px;
+    box-shadow: 0 0 12px #9999997e;
+    color: var(--bgTostr);
+  }
+  .ngx-toastr:hover {
+    box-shadow: 0 0 12px #000000;
+    opacity: 1;
+    cursor: pointer;
+  }
+}
+
+.dataTables_filter {
+  display: none;
+  z-index: 0;
+  opacity: 0;
+}

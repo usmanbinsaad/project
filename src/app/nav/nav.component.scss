@@ -1,0 +1,41 @@
+@import "../../styles.scss";
+@import "../../varable.scss";
+.bg-white {
+  background-color: var(--common-bgClr) !important;
+}
+
+.align-items-center {
+  align-items: center !important;
+}
+
+.sectionHead {
+  font-family: var(--family_font);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 42px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #2c4a6c;
+}
+.switch-group {
+  margin-left: 10px;
+
+  .radio_btn {
+    width: 120px;
+    display: inline-block;
+    overflow: hidden;
+    clear: both;
+    background: transparent;
+    line-height: 40px;
+    border: 0;
+    font-family: var(--family_font);
+    font-style: normal;
+    &.active {
+      color: red !important;
+      // background: var(--panelheading);
+    }
+  }
+}
