@@ -11,7 +11,6 @@ export interface employee {
   cell: number;
   email: string;
 }
-
 @Component({
   selector: 'app-user-view',
   templateUrl: './user-view.component.html',

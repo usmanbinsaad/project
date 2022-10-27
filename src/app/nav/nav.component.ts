@@ -9,7 +9,6 @@ export class NavComponent implements OnInit {
   addsec: any = true;
   viewsec: any;
   constructor() {}
-
   ngOnInit(): void {}
 
   adduser() {

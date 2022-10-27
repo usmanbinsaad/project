@@ -19,6 +19,7 @@ const routes: Routes = [
   { path: 'userview', component: UserViewComponent, pathMatch: 'full' },
 ];
 
+
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],

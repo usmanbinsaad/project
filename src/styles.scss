@@ -2,19 +2,9 @@
 @import url("https://fonts.googleapis.com/css?family=Barlow");
 @import "varable.scss";
 
-/* Importing Bootstrap SCSS file. */
 .container {
   width: 100% !important;
-  // @media (min-width: 1200px)
-  //  {
-  //     width: 1140px;
-  //     max-width: 100%;
-  // }
-  // @media (min-width: 992px)
-  //  {
-  //     width: 960px;
-  //     max-width: 100%;
-  // }
+
   .p-0 {
     padding: 0 !important;
   }
@@ -40,7 +30,6 @@
   border-radius: 5px;
   margin-top: 5px;
 }
-
 
 .h100 {
   height: 100vh !important;

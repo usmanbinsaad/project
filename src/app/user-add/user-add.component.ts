@@ -61,7 +61,6 @@ export class UserAddComponent implements OnInit {
   submitUser() {
    
     if (this.validateForm.valid) {
-      // console.log(' the form ', this.validateForm.value);
      
       const body = {
         name: this.validateForm.controls['name'].value,
@@ -71,7 +70,7 @@ export class UserAddComponent implements OnInit {
         
       };
       console.log(' the form ', body);
-// const body = this.validateForm.value
+
 
 this.apiServices.post('employee', body).subscribe((data:any )=>{
 if(data){

@@ -5,7 +5,6 @@ import { ToastrService } from 'ngx-toastr';
   providedIn: 'root',
 })
 export class ApiServices {
-
   private urlPath = 'http://localhost:3000/';
 
   constructor(private http: HttpClient, private toastr: ToastrService) {}
